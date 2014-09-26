@@ -56,7 +56,7 @@ describe User do
       user_with_the_same_email.email = @user.email.upcase
       user_with_the_same_email.save
     end
-    
+
     it { should_not be_valid }
   end
 
